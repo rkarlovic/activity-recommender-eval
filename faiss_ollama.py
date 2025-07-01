@@ -1,6 +1,6 @@
 import os
 import glob
-import faiss_ollama
+# import faiss
 import numpy as np
 import PyPDF2
 import nltk
@@ -83,9 +83,18 @@ def build_faiss_index(corpus_dir: str = CORPUS_DIR,
                         else:
                             print("Preskačem chunk:")
                             print(rec)
-    print(f"Ukupno chunkova: {len(svi_chunkovi)}")
-    print(f"Ukupno embeddinga: {len(svi_embeddingi)}")
-    print(f"Svi chunkovi: {svi_chunkovi}")
+    if not svi_chunkovi:
+        print("Nije pronađen nikakav tekst za kreiranje FAISS indeksa.")
+        return
+
+    # embedding_array = np.array(svi_embeddingi, dtype=np.float32)
+    # index = faiss.IndexFlatIP(EMBED_DIM)
+    # index.add(embedding_array)
+    # print(f"FAISS indeks kreiran sa {len(svi_chunkovi)} chunkova.")
+
+    # faiss.write_index(index, index_file)
+    # np.save(chunks_file, np.array(svi_chunkovi, dtype=object))
+    # print(f"Indeks spremljen u '{index_file}', a chunkovi u '{chunks_file}'.")
 
 def extract_text_from_pdf(pdf_path: str):
     """
