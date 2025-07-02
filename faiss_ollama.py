@@ -1,6 +1,6 @@
 import os
 import glob
-# import faiss
+import faiss
 import numpy as np
 import PyPDF2
 import nltk
@@ -12,7 +12,7 @@ nltk.download('punkt_tab')
 CORPUS_DIR = "corpus"          
 INDEX_FILE = "faiss_index.bin" 
 CHUNKS_FILE = "chunks.npy"     
-EMBED_DIM = 1536  
+EMBED_DIM = 768 # OpenAI -> 1536 
 
 
 def split_text(text, max_length=200):
@@ -87,14 +87,18 @@ def build_faiss_index(corpus_dir: str = CORPUS_DIR,
         print("Nije pronađen nikakav tekst za kreiranje FAISS indeksa.")
         return
 
-    # embedding_array = np.array(svi_embeddingi, dtype=np.float32)
-    # index = faiss.IndexFlatIP(EMBED_DIM)
-    # index.add(embedding_array)
-    # print(f"FAISS indeks kreiran sa {len(svi_chunkovi)} chunkova.")
+    embedding_array = np.array(svi_embeddingi, dtype=np.float32)
+    index = faiss.IndexFlatIP(EMBED_DIM)
+    
+    print(f"embedding_array.shape = {embedding_array.shape}")
+    print(f"embedding_array.dtype = {embedding_array.dtype}")
 
-    # faiss.write_index(index, index_file)
-    # np.save(chunks_file, np.array(svi_chunkovi, dtype=object))
-    # print(f"Indeks spremljen u '{index_file}', a chunkovi u '{chunks_file}'.")
+    index.add(embedding_array)
+    print(f"FAISS indeks kreiran sa {len(svi_chunkovi)} chunkova.")
+
+    faiss.write_index(index, index_file)
+    np.save(chunks_file, np.array(svi_chunkovi, dtype=object))
+    print(f"Indeks spremljen u '{index_file}', a chunkovi u '{chunks_file}'.")
 
 def extract_text_from_pdf(pdf_path: str):
     """
@@ -116,8 +120,9 @@ def get_embedding(text: str):
     try:
         response = ollama.embed(
                 model='nomic-embed-text:latest',
-                input='Llamas are members of the camelid family')
-        emb = response["embeddings"]
+                input=text)
+        emb = response["embeddings"][0]
+
         return np.array(emb, dtype=np.float32)
     except Exception as e:
         print(f"Pogreška pri dohvaćanju embeddinga: {e}. Preskačem ovaj chunk:")
