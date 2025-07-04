@@ -10,8 +10,10 @@ nltk.download('punkt')
 nltk.download('punkt_tab')
 
 CORPUS_DIR = "corpus"          
-INDEX_FILE = "faiss_index.bin" 
-CHUNKS_FILE = "chunks.npy"     
+# INDEX_FILE = "faiss_index.bin" 
+# CHUNKS_FILE = "chunks.npy"
+INDEX_FILE = os.environ["FAISS_INDEX_FILE"]
+CHUNKS_FILE = os.environ["CHUNKS_FILE"]
 EMBED_DIM = 768 # OpenAI -> 1536 
 
 
@@ -125,7 +127,7 @@ def get_embedding(text: str):
 
         return np.array(emb, dtype=np.float32)
     except Exception as e:
-        print(f"Pogreška pri dohvaćanju embeddinga: {e}. Preskačem ovaj chunk:")
+        print(f"Error getting embedding: {e}. Skipping this chunk:")
         print(text)
         return None
 
