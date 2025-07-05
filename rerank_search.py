@@ -146,5 +146,5 @@ def main():
 
 
 if __name__ == "__main__":
-    print("🔥 Script is being run directly")
+    print("Script is being run")
     main()
