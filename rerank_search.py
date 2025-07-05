@@ -122,7 +122,7 @@ def main():
     # One input for all tests or multiple different inputs
     user_input = "Zelim razgledavati prirodu i dupine."
 
-    reranked_results = search_with_reranking(user_input, initial_k=20, final_k=5)
+    reranked_results = search_with_reranking(user_input, initial_k=20, final_k=10)
     if reranked_results:
         for i, result in enumerate(reranked_results, 1):
             print(f"\n{i}. RERANKED RESULT:")
