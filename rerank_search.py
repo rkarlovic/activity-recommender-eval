@@ -113,6 +113,35 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
 
 # print(response)
 
+def get_response(message, model_name):
+    system_message = {
+
+        "role": "system",
+        "content": """
+        You are a helpful assistant that provides recommendations based on user input.
+        """
+    }
+
+    if not messages or messages[0]["role"] != "system":
+        messages.insert(0, system_message)
+    
+    try:
+        response = completion(
+            model=model_name,
+            messages= message,
+            api_base="http://localhost:11434",
+        )
+
+        # Extract content from response
+        if hasattr(response, 'choices') and len(response.choices) > 0:
+            return response.choices[0].message.content
+        else:
+            return None
+                
+    except Exception as e:
+        print(f"Error making API call: {e}")
+        return None
+
 def main():
     print("Starting rerank search...")
     if not os.path.exists(INDEX_FILE) or not os.path.exists(CHUNKS_FILE):
@@ -143,6 +172,36 @@ def main():
         #     else:
         #         print("No results found.")
 
+    model_names = ["gemma3:latest", "qwen3:latest", "qwen2:latest", "granite3.3:latest", "granite3.2:latest", "llama3.2:latest", "llama3.1:latest", "deepseek-r1:8b", "phi4:14b", "mistral:7b"]
+    for model_name in model_names:
+        results = []
+        #Add for loop here to iterate over all user inputs once they are defined
+        # messages = [
+        #     {
+        #         "role": "user",
+        #         "content": row["user_input"]
+        #     }
+        # ]
+
+        response = get_response(messages, model_name)
+
+        # Assuming the response is a JSON string, parse it
+        # Add parser to handle the response once return format is defined
+        try:
+            response_data = json.loads(response)
+            result = {
+                "recommendation": response_data.get("recommendation", ""),
+            }
+
+            results.append(result)
+
+        except json.JSONDecodeError as e:
+            # print(f"Error decoding JSON for row {index}: {response}")
+            print(f"JSON decode error: {e}")
+
+            results.append(result)
+            continue
+        
 
 
 if __name__ == "__main__":
