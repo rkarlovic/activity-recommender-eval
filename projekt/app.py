@@ -7,7 +7,7 @@ import json
 from sentence_transformers import SentenceTransformer
 
 # ~~~~ Postavke modela ~~~~
-embedding_dimension = 1024
+embedding_dimension = 768 # nomic
 index_file = 'faiss_store.index'
 corpus = "data/corpus.json"
 # TODO: ollama_url = ?
@@ -30,14 +30,14 @@ print(f"Učitani korpusi su dužine {len(corpus)} chunkova.")
 # ~~~~ Embedding function ~~~~
 def get_embedding(text):
     payload = {
-        "model": "bge-large", # TODO: replace with chosen model
-        "prompt": [text]
-        # timeout needed? TO CHECK
+        "model": "nomic-embed-text",
+        "prompt": [text],
+        "timeout": 60
     }
 
     response = requests.post(ollama_embedding_url, json=payload)
     response.raise_for_status()
-    # TODO: If the response is not successful, it will raise an HTTPError ?
+    # TODO, IF NEEDED: If the response is not successful, it will raise an HTTPError ?
 
     embedding = response.json(["embedding"])[0]  # emb = response["data"][0]["embedding"] -> "grab the first one only"
     embedding = np.array(embedding, dtype=np.float32) # standardization to float32
@@ -49,7 +49,7 @@ def get_embedding(text):
 # ~~~~ Recommendation generator ~~~~
 def generate_recommendation(prompt):
     payload = {
-        "model" : "", # TODO: update with model name
+        "model" : "llama3", # TODO: update with chosenmodel name
         "prompt": prompt
     }
 
