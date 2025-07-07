@@ -1,0 +1,1011 @@
+{
+"user_profile1": {
+    "age": 28,
+    "gender": "female",
+    "diet": "vegan",
+    "food_preferences": ["sweets", "spicy food", "plant-based desserts"],
+    "likes": ["hiking", "technology", "cosmetics"],
+    "dislikes": ["meat", "alcohol"],
+    "weather_preference": "sunny",
+    "lifestyle": ["hiking", "outdoor festivals", "day trips"]
+  },
+  "user_profile2": {
+    "age": 45,
+    "gender": "male",
+    "diet": "only_eats_fish",
+    "food_preferences": ["grilled fish", "salty snacks"],
+    "likes": ["photography", "jazz music", "quiet places"],
+    "dislikes": ["spicy food", "crowds"],
+    "weather_preference": "cloudy",
+    "lifestyle": ["nature walks", "scenic drives", "museum visits"]
+  },
+  "user_profile3": {
+    "age": 34,
+    "gender": "non-binary",
+    "diet": "carnivore",
+    "food_preferences": ["red meat", "barbecue", "salty food"],
+    "likes": ["gym", "barbecue", "cars"],
+    "dislikes": ["vegan food", "cold weather"],
+    "weather_preference": "hot and dry",
+    "lifestyle": ["road trips", "live sports", "weekend grilling"]
+  },
+  "user_profile4": {
+    "age": 23,
+    "gender": "female",
+    "diet": "vegan",
+    "food_preferences": ["fresh fruits", "smoothies", "sweets"],
+    "likes": ["yoga", "meditation", "smoothies"],
+    "dislikes": ["loud noises", "processed foods"],
+    "weather_preference": "mild spring",
+    "lifestyle": ["camping", "sunrise yoga", "beach days"]
+  },
+  "user_profile5": {
+    "age": 51,
+    "gender": "male",
+    "diet": "carnivore",
+    "food_preferences": ["salty food", "smoked meats", "cheese"],
+    "likes": ["fishing", "history documentaries", "puzzles"],
+    "dislikes": ["sweet food", "modern music"],
+    "weather_preference": "cold and snowy",
+    "lifestyle": ["fishing trips", "hunting cabins", "local diners"]
+  },
+  "user_profile6": {
+    "age": 39,
+    "gender": "female",
+    "diet": "only_eats_fish",
+    "food_preferences": ["cakes", "pastries", "sweets"],
+    "likes": ["baking", "Instagram", "romantic movies"],
+    "dislikes": ["sports", "spicy food"],
+    "weather_preference": "warm and breezy",
+    "lifestyle": ["café hopping", "shopping", "spa days"]
+  },
+  "user_profile7": {
+    "age": 31,
+    "gender": "male",
+    "diet": "carnivore",
+    "food_preferences": ["junk food", "salty snacks", "energy drinks"],
+    "likes": ["gaming", "coding", "sci-fi"],
+    "dislikes": ["reality shows", "early mornings"],
+    "weather_preference": "rainy",
+    "lifestyle": ["LAN parties", "comic conventions", "movie marathons at home"]
+  },
+  "user_profile8": {
+    "age": 60,
+    "gender": "female",
+    "diet": "carnivore",
+    "food_preferences": ["comfort food", "roasted meat", "savory pies"],
+    "likes": ["gardening", "classic rock", "traveling"],
+    "dislikes": ["crowded cities", "vegan options"],
+    "weather_preference": "temperate",
+    "lifestyle": ["botanical gardens", "craft fairs", "train tours"]
+  },
+  "user_profile9": {
+    "age": 19,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["bubble tea", "sweets", "ramen (vegan)"],
+    "likes": ["anime", "bubble tea", "K-pop"],
+    "dislikes": ["coffee", "early lectures"],
+    "weather_preference": "overcast with breeze",
+    "lifestyle": ["mall hangouts", "karaoke nights", "indoor arcades"]
+  },
+  "user_profile10": {
+    "age": 36,
+    "gender": "male",
+    "diet": "only_eats_fish",
+    "food_preferences": ["grilled seafood", "tropical fruits", "light meals"],
+    "likes": ["surfing", "tropical fruits", "sustainable living"],
+    "dislikes": ["red meat", "plastic packaging"],
+    "weather_preference": "hot and humid",
+    "lifestyle": ["beach parties", "island hopping", "diving tours"]
+},
+"user_profile11": {
+        "age": 58,
+        "gender": "female",
+        "diet": "vegan",
+        "food_preferences": ["salty food", "smoked meats", "cheese"],
+        "likes": ["yoga", "meditation", "smoothies"],
+        "dislikes": ["loud noises", "processed foods"],
+        "weather_preference": "hot and dry",
+        "lifestyle": ["nature walks", "scenic drives", "museum visits"]
+},
+"user_profile12": {
+        "age": 61,
+        "gender": "non-binary",
+        "diet": "only_eats_fish",
+        "food_preferences": ["grilled fish", "salty snacks"],
+        "likes": ["surfing", "tropical fruits", "sustainable living"],
+        "dislikes": ["reality shows", "early mornings"],
+        "weather_preference": "sunny",
+        "lifestyle": ["hiking", "outdoor festivals", "day trips"]
+},
+"user_profile13": {
+        "age": 23,
+        "gender": "female",
+        "diet": "vegan",
+        "food_preferences": ["bubble tea", "sweets", "ramen (vegan)"],
+        "likes": ["surfing", "tropical fruits", "sustainable living"],
+        "dislikes": ["meat", "alcohol"],
+        "weather_preference": "overcast with breeze",
+        "lifestyle": ["camping", "sunrise yoga", "beach days"]
+},
+"user_profile14": {
+        "age": 63,
+        "gender": "non-binary",
+        "diet": "only_eats_fish",
+        "food_preferences": ["bubble tea", "sweets", "ramen (vegan)"],
+        "likes": ["gaming", "coding", "sci-fi"],
+        "dislikes": ["loud noises", "processed foods"],
+        "weather_preference": "temperate",
+        "lifestyle": ["beach parties", "island hopping", "diving tours"]
+},
+"user_profile15": {
+        "age": 35,
+        "gender": "female",
+        "diet": "vegan",
+        "food_preferences": ["junk food", "salty snacks", "energy drinks"],
+        "likes": ["baking", "Instagram", "romantic movies"],
+        "dislikes": ["sweet food", "modern music"],
+        "weather_preference": "hot and dry",
+        "lifestyle": ["camping", "sunrise yoga", "beach days"]
+},
+"user_profile16": {
+        "age": 39,
+        "gender": "female",
+        "diet": "vegan",
+        "food_preferences": ["junk food", "salty snacks", "energy drinks"],
+        "likes": ["photography", "jazz music", "quiet places"],
+        "dislikes": ["sports", "spicy food"],
+        "weather_preference": "warm and breezy",
+        "lifestyle": ["beach parties", "island hopping", "diving tours"]
+},
+"user_profile17": {
+        "age": 34,
+        "gender": "female",
+        "diet": "only_eats_fish",
+        "food_preferences": ["comfort food", "roasted meat", "savory pies"],
+        "likes": ["anime", "bubble tea", "K-pop"],
+        "dislikes": ["spicy food", "crowds"],
+        "weather_preference": "rainy",
+        "lifestyle": ["nature walks", "scenic drives", "museum visits"]
+},
+"user_profile18": {
+        "age": 22,
+        "gender": "non-binary",
+        "diet": "only_eats_fish",
+        "food_preferences": ["fresh fruits", "smoothies", "sweets"],
+        "likes": ["photography", "jazz music", "quiet places"],
+        "dislikes": ["sweet food", "modern music"],
+        "weather_preference": "hot and humid",
+        "lifestyle": ["nature walks", "scenic drives", "museum visits"]
+},
+"user_profile19": {
+        "age": 54,
+        "gender": "female",
+        "diet": "carnivore",
+        "food_preferences": ["bubble tea", "sweets", "ramen (vegan)"],
+        "likes": ["gaming", "coding", "sci-fi"],
+        "dislikes": ["sports", "spicy food"],
+        "weather_preference": "cloudy",
+        "lifestyle": ["mall hangouts", "karaoke nights", "indoor arcades"]
+},
+"user_profile20": {
+        "age": 59,
+        "gender": "male",
+        "diet": "vegan",
+        "food_preferences": ["junk food", "salty snacks", "energy drinks"],
+        "likes": ["gardening", "classic rock", "traveling"],
+        "dislikes": ["spicy food", "crowds"],
+        "weather_preference": "rainy",
+        "lifestyle": ["café hopping", "shopping", "spa days"]
+},
+"user_profile21": {
+    "age": 34,
+    "gender": "female",
+    "diet": "vegetarian",
+    "food_preferences": ["pasta", "cheese platters", "fruit bowls"],
+    "likes": ["photography", "yoga", "poetry"],
+    "dislikes": ["loud music", "nightclubs"],
+    "weather_preference": "cloudy",
+    "lifestyle": ["early morning walks", "weekend retreats", "plant parenting"]
+},
+"user_profile22": {
+    "age": 41,
+    "gender": "non-binary",
+    "diet": "omnivore",
+    "food_preferences": ["steak", "sushi", "dumplings"],
+    "likes": ["gaming", "sci-fi movies", "coding"],
+    "dislikes": ["sweet desserts", "fashion trends"],
+    "weather_preference": "windy",
+    "lifestyle": ["late-night coding", "tech meetups", "solo hiking"]
+},
+"user_profile23": {
+    "age": 27,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["smoothies", "rice noodles", "avocado toast"],
+    "likes": ["journaling", "cycling", "indie films"],
+    "dislikes": ["coffee", "overcrowded events"],
+    "weather_preference": "mild",
+    "lifestyle": ["remote work", "co-working cafés", "local art fairs"]
+},
+"user_profile24": {
+    "age": 65,
+    "gender": "male",
+    "diet": "only_eats_fish",
+    "food_preferences": ["grilled vegetables", "miso soup", "olives"],
+    "likes": ["birdwatching", "classical music", "chess"],
+    "dislikes": ["processed food", "long drives"],
+    "weather_preference": "foggy",
+    "lifestyle": ["library visits", "botanical gardens", "early dinners"]
+},
+"user_profile25": {
+    "age": 22,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["bubble tea", "ramen", "fried chicken"],
+    "likes": ["K-pop", "vlogging", "DIY crafts"],
+    "dislikes": ["reading long texts", "slow Wi-Fi"],
+    "weather_preference": "sunny",
+    "lifestyle": ["city exploring", "fashion blogging", "karaoke nights"]
+},
+"user_profile26": {
+    "age": 49,
+    "gender": "male",
+    "diet": "pescatarian",
+    "food_preferences": ["grilled fish", "quinoa", "green smoothies"],
+    "likes": ["surfing", "drone photography", "eco-activism"],
+    "dislikes": ["meat", "air pollution"],
+    "weather_preference": "breezy",
+    "lifestyle": ["beach cleanups", "remote islands", "barefoot walking"]
+},
+"user_profile27": {
+    "age": 38,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["tofu", "lentil soup", "kombucha"],
+    "likes": ["documentaries", "upcycling", "silent retreats"],
+    "dislikes": ["small talk", "high heels"],
+    "weather_preference": "cool",
+    "lifestyle": ["minimalist living", "community gardening", "biking everywhere"]
+},
+"user_profile28": {
+    "age": 31,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["street food", "milkshakes", "nachos"],
+    "likes": ["stand-up comedy", "concerts", "sneaker collecting"],
+    "dislikes": ["formal wear", "early mornings"],
+    "weather_preference": "warm",
+    "lifestyle": ["festival hopping", "late brunches", "night walks"]
+},
+"user_profile29": {
+    "age": 56,
+    "gender": "male",
+    "diet": "low_carb",
+    "food_preferences": ["roast beef", "hard cheese", "nuts"],
+    "likes": ["DIY projects", "woodworking", "classic cars"],
+    "dislikes": ["gluten", "fast food"],
+    "weather_preference": "dry",
+    "lifestyle": ["garage tinkering", "rural living", "evening barbecues"]
+},
+"user_profile30": {
+    "age": 45,
+    "gender": "female",
+    "diet": "vegetarian",
+    "food_preferences": ["paneer curry", "herbal tea", "sourdough bread"],
+    "likes": ["astrology", "folk music", "sketching"],
+    "dislikes": ["loud noises", "clutter"],
+    "weather_preference": "cold",
+    "lifestyle": ["mountain cabins", "journaling by candlelight", "slow mornings"]
+},
+"user_profile31": {
+    "age": 29,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["burgers", "french fries", "milkshakes"],
+    "likes": ["street photography", "basketball", "tech reviews"],
+    "dislikes": ["slow service", "rainy weather"],
+    "weather_preference": "sunny",
+    "lifestyle": ["urban exploration", "freelancing", "night drives"]
+},
+"user_profile32": {
+    "age": 50,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["zucchini noodles", "chia pudding", "rice cakes"],
+    "likes": ["reading memoirs", "nature walks", "herbalism"],
+    "dislikes": ["processed sugar", "big cities"],
+    "weather_preference": "mild",
+    "lifestyle": ["organic gardening", "home remedies", "tea ceremonies"]
+},
+"user_profile33": {
+    "age": 36,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["falafel", "vegan curry", "coconut water"],
+    "likes": ["ambient music", "graphic design", "longboarding"],
+    "dislikes": ["corporate environments", "tight clothing"],
+    "weather_preference": "overcast",
+    "lifestyle": ["digital nomadism", "vintage thrifting", "urban biking"]
+},
+"user_profile34": {
+    "age": 63,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["mushroom risotto", "minestrone soup", "fruit compote"],
+    "likes": ["gardening", "bird feeding", "puzzles"],
+    "dislikes": ["technology overload", "loud voices"],
+    "weather_preference": "cool",
+    "lifestyle": ["quiet suburbs", "early bedtime", "radio listening"]
+},
+"user_profile35": {
+    "age": 24,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["tacos", "mochi", "matcha latte"],
+    "likes": ["anime", "fashion design", "roller skating"],
+    "dislikes": ["boredom", "plain food"],
+    "weather_preference": "humid",
+    "lifestyle": ["urban nightlife", "skate parks", "coffee shop hopping"]
+},
+"user_profile36": {
+    "age": 58,
+    "gender": "female",
+    "diet": "only_eats_fish",
+    "food_preferences": ["seafood paella", "seaweed salad", "rice"],
+    "likes": ["knitting", "historical novels", "spa music"],
+    "dislikes": ["clutter", "sports events"],
+    "weather_preference": "rainy",
+    "lifestyle": ["retreat centers", "museum memberships", "balcony gardening"]
+},
+"user_profile37": {
+    "age": 40,
+    "gender": "male",
+    "diet": "low_carb",
+    "food_preferences": ["grilled chicken", "eggs", "zoodles"],
+    "likes": ["cycling", "productivity hacks", "financial podcasts"],
+    "dislikes": ["carbs", "wasting time"],
+    "weather_preference": "crisp fall",
+    "lifestyle": ["morning workouts", "meal prepping", "early bird routines"]
+},
+"user_profile38": {
+    "age": 33,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["acai bowls", "tempeh stir-fry", "almond milk"],
+    "likes": ["spoken word poetry", "urban gardening", "zines"],
+    "dislikes": ["corporate jargon", "plastic packaging"],
+    "weather_preference": "breezy",
+    "lifestyle": ["creative collectives", "zine fests", "eco-conscious shopping"]
+},
+"user_profile39": {
+    "age": 44,
+    "gender": "female",
+    "diet": "pescatarian",
+    "food_preferences": ["sushi rolls", "seaweed snacks", "tofu poke"],
+    "likes": ["meditation apps", "calligraphy", "slow travel"],
+    "dislikes": ["rush hours", "fast food"],
+    "weather_preference": "foggy",
+    "lifestyle": ["quiet mornings", "low-tech living", "wellness retreats"]
+},
+"user_profile40": {
+    "age": 61,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["hearty stews", "sourdough bread", "roast chicken"],
+    "likes": ["wood carving", "radio dramas", "classic westerns"],
+    "dislikes": ["spicy sauces", "modern slang"],
+    "weather_preference": "cold",
+    "lifestyle": ["workshop tinkering", "evening storytelling", "family dinners"]
+},
+"user_profile41": {
+    "age": 26,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["poke bowls", "fresh berries", "rice paper rolls"],
+    "likes": ["pilates", "podcasts", "interior design"],
+    "dislikes": ["overplanning", "strong perfumes"],
+    "weather_preference": "sunny",
+    "lifestyle": ["open-plan living", "decor inspo scrolling", "morning affirmations"]
+},
+"user_profile42": {
+    "age": 60,
+    "gender": "male",
+    "diet": "low_carb",
+    "food_preferences": ["boiled eggs", "cabbage stew", "dark chocolate"],
+    "likes": ["old war movies", "fishing", "radio news"],
+    "dislikes": ["gossip", "trendy food"],
+    "weather_preference": "cool",
+    "lifestyle": ["porch sitting", "DIY repairs", "reading the newspaper"]
+},
+"user_profile43": {
+    "age": 30,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["jackfruit tacos", "plant-based burgers", "almond yogurt"],
+    "likes": ["tattoo art", "vinyl records", "bikepacking"],
+    "dislikes": ["plastic straws", "uninspired routines"],
+    "weather_preference": "overcast",
+    "lifestyle": ["communal living", "urban exploration", "pop-up events"]
+},
+"user_profile44": {
+    "age": 52,
+    "gender": "female",
+    "diet": "vegetarian",
+    "food_preferences": ["mango chutney", "paneer wraps", "lentil dahl"],
+    "likes": ["crochet", "crime dramas", "tea rituals"],
+    "dislikes": ["cold food", "silent rooms"],
+    "weather_preference": "warm",
+    "lifestyle": ["book clubs", "family game nights", "seasonal decorating"]
+},
+"user_profile45": {
+    "age": 39,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["buffalo wings", "nachos", "iced tea"],
+    "likes": ["fantasy football", "action movies", "car tuning"],
+    "dislikes": ["vegan cheese", "waiting in lines"],
+    "weather_preference": "hot",
+    "lifestyle": ["sports bars", "weekend road trips", "home theater setups"]
+},
+"user_profile46": {
+    "age": 43,
+    "gender": "female",
+    "diet": "only_eats_fish",
+    "food_preferences": ["miso ramen", "grilled octopus", "seaweed chips"],
+    "likes": ["ceramics", "beach yoga", "documentaries"],
+    "dislikes": ["chaotic schedules", "loud alarms"],
+    "weather_preference": "breezy",
+    "lifestyle": ["coastal living", "slow mornings", "wellness journals"]
+},
+"user_profile47": {
+    "age": 37,
+    "gender": "male",
+    "diet": "vegan",
+    "food_preferences": ["vegan gyros", "kale chips", "soy lattes"],
+    "likes": ["coding", "indie games", "podcast editing"],
+    "dislikes": ["group meetings", "messy interfaces"],
+    "weather_preference": "foggy",
+    "lifestyle": ["home office life", "asynchronous work", "indoor plants"]
+},
+"user_profile48": {
+    "age": 28,
+    "gender": "female",
+    "diet": "pescatarian",
+    "food_preferences": ["ceviche", "soba noodles", "coconut rice"],
+    "likes": ["surf photography", "language learning", "vintage shopping"],
+    "dislikes": ["monotony", "carbonated drinks"],
+    "weather_preference": "humid",
+    "lifestyle": ["cultural festivals", "rooftop dinners", "passport collecting"]
+},
+"user_profile49": {
+    "age": 46,
+    "gender": "non-binary",
+    "diet": "gluten_free",
+    "food_preferences": ["stuffed peppers", "bean salads", "fruit smoothies"],
+    "likes": ["folk music", "aromatherapy", "DIY skincare"],
+    "dislikes": ["noisy kitchens", "stiff clothing"],
+    "weather_preference": "cloudy",
+    "lifestyle": ["cabin rentals", "slow fashion", "gardening with herbs"]
+},
+"user_profile50": {
+    "age": 32,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["lasagna", "espresso", "hazelnut spread"],
+    "likes": ["stand-up comedy", "travel vlogging", "tech gadgets"],
+    "dislikes": ["food trends", "long commutes"],
+    "weather_preference": "temperate",
+    "lifestyle": ["airports and layovers", "couch surfing", "online reviews"]
+},
+"user_profile51": {
+    "age": 35,
+    "gender": "female",
+    "diet": "low_carb",
+    "food_preferences": ["zucchini fritters", "cauliflower rice", "turkey jerky"],
+    "likes": ["productivity planning", "minimalist design", "audiobooks"],
+    "dislikes": ["sweets", "group workouts"],
+    "weather_preference": "dry heat",
+    "lifestyle": ["meal planning", "desk setups", "self-discipline routines"]
+},
+"user_profile52": {
+    "age": 62,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["eggplant stew", "goat cheese", "pumpkin soup"],
+    "likes": ["classic literature", "calligraphy", "bird photography"],
+    "dislikes": ["fast food chains", "reality TV"],
+    "weather_preference": "cold and crisp",
+    "lifestyle": ["reading nooks", "slow-paced travel", "pen pal writing"]
+},
+"user_profile53": {
+    "age": 25,
+    "gender": "non-binary",
+    "diet": "gluten_free",
+    "food_preferences": ["tofu skewers", "sorghum wraps", "oat milk"],
+    "likes": ["street fashion", "beatmaking", "urban dancing"],
+    "dislikes": ["strict rules", "monochrome spaces"],
+    "weather_preference": "hot and humid",
+    "lifestyle": ["street art walks", "late-night cafes", "open mic nights"]
+},
+"user_profile54": {
+    "age": 48,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["fried rice", "samosas", "ginger tea"],
+    "likes": ["memoir writing", "community volunteering", "vintage maps"],
+    "dislikes": ["celebrity gossip", "plastic containers"],
+    "weather_preference": "calm and overcast",
+    "lifestyle": ["used bookstores", "charity events", "evening journaling"]
+},
+"user_profile55": {
+    "age": 57,
+    "gender": "male",
+    "diet": "only_eats_fish",
+    "food_preferences": ["mackerel toast", "sardines", "lemon rice"],
+    "likes": ["history documentaries", "model trains", "old radios"],
+    "dislikes": ["online shopping", "spicy dips"],
+    "weather_preference": "stormy",
+    "lifestyle": ["antique collecting", "backyard DIY", "trainspotting"]
+},
+"user_profile56": {
+    "age": 42,
+    "gender": "female",
+    "diet": "vegan",
+    "food_preferences": ["black bean stew", "cashew cheese", "quinoa burgers"],
+    "likes": ["eco-design", "indoor climbing", "foraging"],
+    "dislikes": ["meat substitutes", "fluorescent lighting"],
+    "weather_preference": "chilly",
+    "lifestyle": ["tiny homes", "bike commutes", "seasonal recipes"]
+},
+"user_profile57": {
+    "age": 31,
+    "gender": "non-binary",
+    "diet": "pescatarian",
+    "food_preferences": ["grilled eel", "udon noodles", "green tea parfait"],
+    "likes": ["ambient photography", "zoology", "aquascaping"],
+    "dislikes": ["air travel", "sudden schedule changes"],
+    "weather_preference": "light drizzle",
+    "lifestyle": ["aquarium maintenance", "nature sketching", "early lunches"]
+},
+"user_profile58": {
+    "age": 46,
+    "gender": "male",
+    "diet": "low_carb",
+    "food_preferences": ["beef jerky", "broccoli mash", "protein pancakes"],
+    "likes": ["strength training", "spy novels", "grill setups"],
+    "dislikes": ["sweet sauces", "diet trends"],
+    "weather_preference": "dry and sunny",
+    "lifestyle": ["garage workouts", "solo barbecues", "no-phone weekends"]
+},
+"user_profile59": {
+    "age": 21,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["smoothie bowls", "veggie sushi", "sweet potato fries"],
+    "likes": ["pastel aesthetics", "photo editing", "quiet playlists"],
+    "dislikes": ["energy drinks", "cluttered UIs"],
+    "weather_preference": "warm breeze",
+    "lifestyle": ["Figma mockups", "study vlogs", "plant shelf styling"]
+},
+"user_profile60": {
+    "age": 54,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["lamb chops", "mashed potatoes", "cabbage slaw"],
+    "likes": ["political analysis", "gardening tools", "classic cars"],
+    "dislikes": ["dieting", "TV commercials"],
+    "weather_preference": "windy",
+    "lifestyle": ["backyard projects", "car shows", "lunch at local diners"]
+},
+"user_profile61": {
+    "age": 33,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["stuffed zucchini", "feta salad", "grape leaves"],
+    "likes": ["urban beekeeping", "jazz piano", "architecture tours"],
+    "dislikes": ["energy drinks", "car alarms"],
+    "weather_preference": "early spring",
+    "lifestyle": ["public transport", "balcony farming", "eco renovations"]
+},
+"user_profile62": {
+    "age": 45,
+    "gender": "female",
+    "diet": "pescatarian",
+    "food_preferences": ["clam chowder", "wild rice", "roasted asparagus"],
+    "likes": ["coastal walks", "sewing", "vintage magazines"],
+    "dislikes": ["digital clocks", "loud interiors"],
+    "weather_preference": "misty mornings",
+    "lifestyle": ["slow stitching", "local history tours", "handmade gifts"]
+},
+"user_profile63": {
+    "age": 38,
+    "gender": "non-binary",
+    "diet": "gluten_free",
+    "food_preferences": ["plantain chips", "spiced lentils", "fig jam"],
+    "likes": ["spoken word", "street chess", "graffiti photography"],
+    "dislikes": ["overprocessed foods", "idle small talk"],
+    "weather_preference": "cloudy afternoons",
+    "lifestyle": ["creative coworking", "basement gigs", "bike repairs"]
+},
+"user_profile64": {
+    "age": 29,
+    "gender": "female",
+    "diet": "vegan",
+    "food_preferences": ["chickpea patties", "date balls", "almond butter toast"],
+    "likes": ["y2k fashion", "film cameras", "zodiac memes"],
+    "dislikes": ["filters on food", "early meetings"],
+    "weather_preference": "dry desert heat",
+    "lifestyle": ["photo dumps", "sunset chasing", "indie nail salons"]
+},
+"user_profile65": {
+    "age": 67,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["beef stew", "cornbread", "apricot jam"],
+    "likes": ["radio dramas", "wood puzzles", "bird calls"],
+    "dislikes": ["text messaging", "fast fashion"],
+    "weather_preference": "crisp autumn",
+    "lifestyle": ["firewood stacking", "puzzle solving", "early breakfasts"]
+},
+"user_profile66": {
+    "age": 36,
+    "gender": "non-binary",
+    "diet": "low_carb",
+    "food_preferences": ["cauliflower crust pizza", "egg muffins", "zoodle stir-fry"],
+    "likes": ["retrogaming", "VR workouts", "synth music"],
+    "dislikes": ["push notifications", "mismatched fonts"],
+    "weather_preference": "dry winter sun",
+    "lifestyle": ["smart home tinkering", "no-email weekends", "LED setups"]
+},
+"user_profile67": {
+    "age": 53,
+    "gender": "female",
+    "diet": "only_eats_fish",
+    "food_preferences": ["tuna tartare", "seaweed wraps", "lemon couscous"],
+    "likes": ["sudoku", "classic ballet", "greenhouses"],
+    "dislikes": ["deep-fried anything", "overuse of emojis"],
+    "weather_preference": "cool breeze",
+    "lifestyle": ["early bird yoga", "botanical sketching", "herbal tonics"]
+},
+"user_profile68": {
+    "age": 22,
+    "gender": "male",
+    "diet": "vegan",
+    "food_preferences": ["lentil burger", "rice cakes with hummus", "cashew ice cream"],
+    "likes": ["streetwear", "gaming streams", "crypto memes"],
+    "dislikes": ["slow loading apps", "daylight saving time"],
+    "weather_preference": "warm nights",
+    "lifestyle": ["online side hustles", "modded keyboards", "LED room lights"]
+},
+"user_profile69": {
+    "age": 40,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["quinoa stuffed peppers", "banana chips", "mint tea"],
+    "likes": ["herbal skincare", "sound baths", "upcycled fashion"],
+    "dislikes": ["air conditioning", "plastic wraps"],
+    "weather_preference": "balmy",
+    "lifestyle": ["candlelit evenings", "slow skincare rituals", "reusable everything"]
+},
+"user_profile70": {
+    "age": 61,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["stuffed mushrooms", "barley soup", "spiced pears"],
+    "likes": ["gardening journals", "chess with neighbors", "classical guitar"],
+    "dislikes": ["lawnmowers", "chain restaurants"],
+    "weather_preference": "early evening coolness",
+    "lifestyle": ["composting", "park benches", "letter writing"]
+},
+"user_profile71": {
+    "age": 47,
+    "gender": "non-binary",
+    "diet": "vegan",
+    "food_preferences": ["tempeh skewers", "cashew cream pasta", "roasted chickpeas"],
+    "likes": ["analog synths", "zine publishing", "reclaimed furniture"],
+    "dislikes": ["touchscreens", "supermarket lighting"],
+    "weather_preference": "windy evenings",
+    "lifestyle": ["secondhand markets", "bike cafes", "vinyl-only nights"]
+},
+"user_profile72": {
+    "age": 59,
+    "gender": "female",
+    "diet": "low_carb",
+    "food_preferences": ["chicken salad", "grilled zucchini", "deviled eggs"],
+    "likes": ["sailing", "soap making", "geocaching"],
+    "dislikes": ["digital ads", "processed sauces"],
+    "weather_preference": "clear skies",
+    "lifestyle": ["early coffee rituals", "cabin escapes", "boat maintenance"]
+},
+"user_profile73": {
+    "age": 26,
+    "gender": "male",
+    "diet": "pescatarian",
+    "food_preferences": ["shrimp tacos", "miso broth", "spinach tempura"],
+    "likes": ["vlogging", "film editing", "longboard cruising"],
+    "dislikes": ["manual paperwork", "heavy breakfasts"],
+    "weather_preference": "tropical rain",
+    "lifestyle": ["urban skating", "street eats", "night shooting"]
+},
+"user_profile74": {
+    "age": 35,
+    "gender": "female",
+    "diet": "vegetarian",
+    "food_preferences": ["ricotta gnocchi", "grilled peaches", "pumpkin lasagna"],
+    "likes": ["pattern design", "interior styling", "stationery collecting"],
+    "dislikes": ["messy desktops", "loud chewing"],
+    "weather_preference": "golden hour sunlight",
+    "lifestyle": ["home journaling", "table setting inspo", "seasonal cooking"]
+},
+"user_profile75": {
+    "age": 50,
+    "gender": "male",
+    "diet": "gluten_free",
+    "food_preferences": ["stuffed tomatoes", "chia muffins", "roasted cauliflower"],
+    "likes": ["classic motorcycles", "carpentry", "strategy board games"],
+    "dislikes": ["automated replies", "soggy fries"],
+    "weather_preference": "mountain breeze",
+    "lifestyle": ["tool workshops", "weekend getaways", "manual brewing"]
+},
+"user_profile76": {
+    "age": 28,
+    "gender": "non-binary",
+    "diet": "omnivore",
+    "food_preferences": ["pho", "beef bao buns", "eggplant rolls"],
+    "likes": ["spoken poetry slams", "live sketching", "mixology"],
+    "dislikes": ["overused hashtags", "plastic decor"],
+    "weather_preference": "foggy mornings",
+    "lifestyle": ["open mic events", "gallery nights", "late brunches"]
+},
+"user_profile77": {
+    "age": 66,
+    "gender": "female",
+    "diet": "only_eats_fish",
+    "food_preferences": ["grilled sardines", "leek soup", "brown rice cakes"],
+    "likes": ["watercolor painting", "postcard writing", "birdwatching"],
+    "dislikes": ["busy traffic", "LED screens"],
+    "weather_preference": "soft drizzle",
+    "lifestyle": ["window plants", "afternoon painting", "quiet porches"]
+},
+"user_profile78": {
+    "age": 41,
+    "gender": "male",
+    "diet": "vegan",
+    "food_preferences": ["seitan wraps", "coconut stew", "sweet potato mash"],
+    "likes": ["trail running", "vintage electronics", "ambient playlists"],
+    "dislikes": ["touch ID", "overly sweet drinks"],
+    "weather_preference": "cold with sun",
+    "lifestyle": ["solo hikes", "gear tinkering", "early sunset runs"]
+},
+"user_profile79": {
+    "age": 39,
+    "gender": "female",
+    "diet": "low_carb",
+    "food_preferences": ["grilled lamb", "olive tapenade", "egg salad"],
+    "likes": ["digital scrapbooking", "aromatherapy", "fermentation"],
+    "dislikes": ["overcooked vegetables", "malls"],
+    "weather_preference": "dusk breeze",
+    "lifestyle": ["evening walks", "indoor herb growing", "kombucha brewing"]
+},
+"user_profile80": {
+    "age": 24,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["halloumi wraps", "spiced couscous", "fig cookies"],
+    "likes": ["DJing", "poster design", "festival volunteering"],
+    "dislikes": ["overplanning", "small talk at gyms"],
+    "weather_preference": "festival warmth",
+    "lifestyle": ["tent camping", "open-air gigs", "craft soda tasting"]
+},
+"user_profile81": {
+    "age": 30,
+    "gender": "female",
+    "diet": "pescatarian",
+    "food_preferences": ["salmon poke", "seaweed miso", "matcha pancakes"],
+    "likes": ["film festivals", "creative coding", "language exchange"],
+    "dislikes": ["fast typing sounds", "calendar overload"],
+    "weather_preference": "moody skies",
+    "lifestyle": ["language cafés", "subtle fashion", "voice journaling"]
+},
+"user_profile82": {
+    "age": 55,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["veal schnitzel", "baked polenta", "apple strudel"],
+    "likes": ["pipe carving", "vintage radios", "history podcasts"],
+    "dislikes": ["mobile apps", "loud air conditioning"],
+    "weather_preference": "crisp winter days",
+    "lifestyle": ["attic tinkering", "evening walks to the bakery", "bookstore browsing"]
+},
+"user_profile83": {
+    "age": 43,
+    "gender": "non-binary",
+    "diet": "gluten_free",
+    "food_preferences": ["grilled tofu steaks", "millet porridge", "fig bars"],
+    "likes": ["collage art", "nature field recording", "vintage jackets"],
+    "dislikes": ["bright LEDs", "restaurant queues"],
+    "weather_preference": "highland chill",
+    "lifestyle": ["soundwalks", "pop-up studios", "quiet night rides"]
+},
+"user_profile84": {
+    "age": 27,
+    "gender": "male",
+    "diet": "low_carb",
+    "food_preferences": ["cauliflower mash", "steak strips", "boiled eggs"],
+    "likes": ["calisthenics", "stoic philosophy", "custom keyboards"],
+    "dislikes": ["loud gyms", "carbs after dark"],
+    "weather_preference": "sunset chill",
+    "lifestyle": ["minimal setups", "cold showers", "fitness tracking"]
+},
+"user_profile85": {
+    "age": 60,
+    "gender": "female",
+    "diet": "vegetarian",
+    "food_preferences": ["mung bean soup", "herbed rice", "honey cake"],
+    "likes": ["tea leaf reading", "pressed flowers", "narrated audiobooks"],
+    "dislikes": ["elevator music", "neon lights"],
+    "weather_preference": "rain with sunshine",
+    "lifestyle": ["window seating", "handwritten notes", "sunroom breakfasts"]
+},
+"user_profile86": {
+    "age": 34,
+    "gender": "non-binary",
+    "diet": "only_eats_fish",
+    "food_preferences": ["grilled calamari", "tuna pesto", "rice rolls"],
+    "likes": ["DJ vinyl sets", "street interviews", "neon art"],
+    "dislikes": ["silent discos", "all-black outfits"],
+    "weather_preference": "neon-lit rain",
+    "lifestyle": ["night cafés", "micro-festivals", "music zines"]
+},
+"user_profile87": {
+    "age": 44,
+    "gender": "male",
+    "diet": "vegan",
+    "food_preferences": ["baked falafel", "lentil meatballs", "banana oat cookies"],
+    "likes": ["urban permaculture", "local politics", "doodle sketching"],
+    "dislikes": ["car dependency", "generic branding"],
+    "weather_preference": "drizzle with fog",
+    "lifestyle": ["bike fixing", "neighborhood meetups", "seed trading"]
+},
+"user_profile88": {
+    "age": 23,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["buckwheat crepes", "veggie tempura", "fruit sushi"],
+    "likes": ["pastel journaling", "cozy anime", "kawaii decor"],
+    "dislikes": ["energy drinks", "shouting"],
+    "weather_preference": "spring bloom",
+    "lifestyle": ["nighttime studying", "scented notebooks", "bed-picnics"]
+},
+"user_profile89": {
+    "age": 49,
+    "gender": "male",
+    "diet": "omnivore",
+    "food_preferences": ["beef chili", "garlic potatoes", "bread pudding"],
+    "likes": ["fire pits", "old Westerns", "garage radio"],
+    "dislikes": ["digital clocks", "group chats"],
+    "weather_preference": "snowy wind",
+    "lifestyle": ["firewood chopping", "thermos coffee", "porch sitting"]
+},
+"user_profile90": {
+    "age": 36,
+    "gender": "female",
+    "diet": "low_carb",
+    "food_preferences": ["egg wraps", "chicken skewers", "zucchini chips"],
+    "likes": ["productivity boards", "no-code tools", "goal tracking"],
+    "dislikes": ["snooze alarms", "meeting overflows"],
+    "weather_preference": "sunrise coolness",
+    "lifestyle": ["habit stacking", "water bottle tracking", "self-challenges"]
+},
+"user_profile91": {
+    "age": 58,
+    "gender": "non-binary",
+    "diet": "pescatarian",
+    "food_preferences": ["anchovy salad", "miso-glazed fish", "seaweed popcorn"],
+    "likes": ["lighthouse visits", "ocean soundscapes", "nautical history"],
+    "dislikes": ["plastic utensils", "airports"],
+    "weather_preference": "coastal fog",
+    "lifestyle": ["tidal walks", "seaside sketching", "dockside reading"]
+},
+"user_profile92": {
+    "age": 29,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["loaded nachos", "fried pickles", "caramel lattes"],
+    "likes": ["street racing games", "graffiti art", "nostalgia playlists"],
+    "dislikes": ["slow interfaces", "crowd control barriers"],
+    "weather_preference": "warm urban nights",
+    "lifestyle": ["rooftop meetups", "arcade lounges", "late-night playlists"]
+},
+"user_profile93": {
+    "age": 46,
+    "gender": "male",
+    "diet": "vegetarian",
+    "food_preferences": ["okra curry", "paneer kebabs", "herbed lentils"],
+    "likes": ["bonsai trimming", "haiku writing", "handcrafted incense"],
+    "dislikes": ["synthetic fabrics", "multitasking"],
+    "weather_preference": "early monsoon",
+    "lifestyle": ["tea house visits", "poetry mornings", "porcelain collecting"]
+},
+"user_profile94": {
+    "age": 31,
+    "gender": "non-binary",
+    "diet": "only_eats_fish",
+    "food_preferences": ["sardine bruschetta", "lime-cured trout", "corn rice"],
+    "likes": ["open water swimming", "silent films", "lo-fi architecture"],
+    "dislikes": ["car alarms", "metal chairs"],
+    "weather_preference": "still cloudy afternoons",
+    "lifestyle": ["evening swims", "zen interiors", "film projector nights"]
+},
+"user_profile95": {
+    "age": 39,
+    "gender": "female",
+    "diet": "gluten_free",
+    "food_preferences": ["millet salad", "tofu crepes", "fig chutney"],
+    "likes": ["visual diaries", "upcycled decor", "digital scrapbooks"],
+    "dislikes": ["corporate fonts", "forced networking"],
+    "weather_preference": "urban overcast",
+    "lifestyle": ["studio corners", "collage evenings", "DIY lighting"]
+},
+"user_profile96": {
+    "age": 64,
+    "gender": "male",
+    "diet": "vegan",
+    "food_preferences": ["roasted root medley", "chia crackers", "spiced oat milk"],
+    "likes": ["wood carving", "medieval history", "acoustic folk"],
+    "dislikes": ["streaming ads", "processed tofu"],
+    "weather_preference": "forest drizzle",
+    "lifestyle": ["cabin solitude", "folklore study", "campfire brewing"]
+},
+"user_profile97": {
+    "age": 22,
+    "gender": "female",
+    "diet": "low_carb",
+    "food_preferences": ["zoodle bowls", "egg bites", "feta-stuffed peppers"],
+    "likes": ["micro vlogs", "desk setups", "aesthetic journaling"],
+    "dislikes": ["noisy cafés", "group tasks"],
+    "weather_preference": "fog and neon glow",
+    "lifestyle": ["study corners", "focus playlists", "daily habit loops"]
+},
+"user_profile98": {
+    "age": 42,
+    "gender": "male",
+    "diet": "pescatarian",
+    "food_preferences": ["grilled swordfish", "ginger rice", "sea salt almonds"],
+    "likes": ["airplane spotting", "industrial photography", "classic watches"],
+    "dislikes": ["soft drinks", "touch gestures"],
+    "weather_preference": "open sky mornings",
+    "lifestyle": ["time-lapse journaling", "field visits", "manual navigation"]
+},
+"user_profile99": {
+    "age": 37,
+    "gender": "non-binary",
+    "diet": "vegetarian",
+    "food_preferences": ["pepper jack quesadillas", "corn soup", "beet fries"],
+    "likes": ["experimental music", "color theory", "old signage"],
+    "dislikes": ["predictable layouts", "flat flavors"],
+    "weather_preference": "stormy twilight",
+    "lifestyle": ["ambient sessions", "museum hopping", "palette testing"]
+},
+"user_profile100": {
+    "age": 51,
+    "gender": "female",
+    "diet": "omnivore",
+    "food_preferences": ["lamb curry", "saffron rice", "rosewater desserts"],
+    "likes": ["jewelry making", "spice markets", "ritual cooking"],
+    "dislikes": ["cold lighting", "digital clocks"],
+    "weather_preference": "sun-warmed dusk",
+    "lifestyle": ["home altars", "festive prep", "candle-lit storytelling"]
+}
+}
+
+
+
+
+
+
+
+
+    
