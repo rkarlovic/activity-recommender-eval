@@ -69,7 +69,12 @@ def generate_recommendation(prompt):
 def create_recommendation():
     data = request.json
     user_profile = data.get("profile", "")
-    weather = data.get("weather", "")
+    if "weather" in data:
+        weather = data["weather"]
+    else:
+        from syn_weather import get_synthetic_weather
+        weather = get_synthetic_weather()
+    
     query_text = f"{user_profile} {weather}"
 
     # Embedding i FAISS search
@@ -82,3 +87,5 @@ def create_recommendation():
 
     # Generiranje preporuke
     recommendation_prompt = f"Na osnovu sljedećih informacija: {query_text}, preporuči aktivnosti: {', '.join(reranked_candidates)}"
+
+    
