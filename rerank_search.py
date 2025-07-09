@@ -8,7 +8,10 @@ from dotenv import load_dotenv
 import re
 import faiss
 import numpy as np
-load_dotenv()
+import random
+from datetime import datetime
+
+load_dotenv() 
 api_key = os.environ["COHERE_API_KEY"]
 INDEX_FILE = os.environ["FAISS_INDEX_FILE"]
 CHUNKS_FILE = os.environ["CHUNKS_FILE"]
@@ -113,6 +116,33 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
 
 # print(response)
 
+#Generiranje sintetičkog vremena
+def generate_synthetic_weather(location: str = "Lošinj") -> str:
+   
+    conditions = [
+        "sunčano",
+        "djelomično oblačno",
+        "pretežno oblačno",
+        "kišovito",
+        "vedro",
+        "vjetrovito",
+        "sparno",
+        "maglovito"
+    ]
+    condition = random.choice(conditions)
+    temperature = random.randint(20, 35)  
+    wind_speed = random.randint(5, 20)    
+
+    current_time = datetime.now().strftime("%d.%m.%Y %H:%M")
+
+    weather_description = (
+        f"Vrijeme za lokaciju {location} ({current_time}): "
+        f"{condition}, temperatura {temperature}°C, vjetar {wind_speed} km/h."
+    )
+
+    return weather_description
+
+
 def get_response(message, model_name):
     system_message = {
 
@@ -122,8 +152,8 @@ def get_response(message, model_name):
         """
     }
 
-    if not messages or messages[0]["role"] != "system":
-        messages.insert(0, system_message)
+    if not message or message[0]["role"] != "system":
+        message.insert(0, system_message)
     
     try:
         response = completion(
@@ -161,6 +191,11 @@ def main():
             print(f"   Text: {result['text']}...")
             print(f"   Original Index: {result['original_index']}")
 
+            weather_info = generate_synthetic_weather("Lošinj")
+            print("\n Trenutno vrijeme na Lošinju je:")
+            print(weather_info)
+
+
         # Output to a file if needed for further analysis
         # with open("reranked_output.txt", "w", encoding="utf-8") as f:
         #     for i, result in enumerate(reranked_results, 1):
@@ -176,14 +211,19 @@ def main():
     for model_name in model_names:
         results = []
         #Add for loop here to iterate over all user inputs once they are defined
-        # messages = [
+        # message = [
         #     {
         #         "role": "user",
-        #         "content": row["user_input"]
+        #         "content": (
+        #             f"{user_input}\n\n"
+        #             "\n".join([f"- {r['text']}" for r in reranked_results]) + f"\n\nAktualno vrijeme:\n{weather_info}""Please provide a recommendation based on the given input."
+        #         ) 
         #     }
         # ]
 
-        response = get_response(messages, model_name)
+        response = get_response(message, model_name = "llama3.1:latest")
+        print("\n Response:")
+        print(response)
 
         # Assuming the response is a JSON string, parse it
         # Add parser to handle the response once return format is defined
@@ -202,7 +242,6 @@ def main():
             results.append(result)
             continue
         
-
 
 if __name__ == "__main__":
     print("Script is being run")
