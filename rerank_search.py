@@ -8,8 +8,9 @@ from dotenv import load_dotenv
 import re
 import faiss
 import numpy as np
-import random
 from datetime import datetime
+import random
+
 
 load_dotenv() 
 api_key = os.environ["COHERE_API_KEY"]
@@ -116,32 +117,18 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
 
 # print(response)
 
-#Generiranje sintetičkog vremena
-def generate_synthetic_weather(location: str = "Lošinj") -> str:
-   
+def get_weather_conditions() -> list:
     conditions = [
-        "sunčano",
-        "djelomično oblačno",
-        "pretežno oblačno",
-        "kišovito",
-        "vedro",
-        "vjetrovito",
-        "sparno",
-        "maglovito"
+        "Weather: sunny, temperature 25°C, Wind 10 km/h",
+        "Weather: partly cloudy, temperature 22°C, Wind 12 km/h",
+        "Weather: mostly cloudy, temperature 20°C, Wind 14 km/h",
+        "Weather: rainy, temperature 18°C, Wind 20 km/h",
+        "Weather: clear, temperature 24°C, Wind 8 km/h",
+        "Weather: windy, temperature 21°C, Wind 25 km/h",
+        "Weather: humid, temperature 27°C, Wind 15 km/h",
+        "Weather: foggy, temperature 17°C, Wind 5 km/h"
     ]
-    condition = random.choice(conditions)
-    temperature = random.randint(20, 35)  
-    wind_speed = random.randint(5, 20)    
-
-    current_time = datetime.now().strftime("%d.%m.%Y %H:%M")
-
-    weather_description = (
-        f"Vrijeme za lokaciju {location} ({current_time}): "
-        f"{condition}, temperatura {temperature}°C, vjetar {wind_speed} km/h."
-    )
-
-    return weather_description
-
+    return conditions
 
 def get_response(message, model_name):
     system_message = {
