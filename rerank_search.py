@@ -19,7 +19,7 @@ api_key = os.environ["COHERE_API_KEY"]
 INDEX_FILE = os.environ["FAISS_INDEX_FILE"]
 CHUNKS_FILE = os.environ["CHUNKS_FILE"]
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 def get_embedding(text: str):
