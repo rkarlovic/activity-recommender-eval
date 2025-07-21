@@ -1,3 +1,4 @@
+import time
 import cohere
 import ollama
 import os
@@ -110,12 +111,6 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
         print(f"Error during Cohere reranking: {e}")
         # Fallback to FAISS results only
         return retrieved_chunks[:final_k]
-# co = cohere.ClientV2(api_key)
-# response = co.chat(
-#     model="rerank-multilingual-v3.0",
-#     documents=docs, 
-#     top_n=10 #Should it be lowered to 5?
-# )
 
 def format_retrieved_chunks(results) -> str:
     """Format retrieved chunks for the prompt"""
@@ -221,8 +216,7 @@ def main():
         "Weather: humid, temperature 27°C, Wind 15 km/h",
         "Weather: foggy, temperature 17°C, Wind 5 km/h"
     ]
-    model_names = ["gemma3:latest"]
-                   #, "qwen3:latest", "qwen2:latest", "granite3.3:latest", "granite3.2:latest", "llama3.2:latest", "llama3.1:latest", "deepseek-r1:8b", "phi4:14b", "mistral:7b"]
+    model_names = ["ollama/gemma3:latest", "ollama/qwen3:latest", "ollama/qwen2:latest", "ollama/granite3.3:latest", "ollama/granite3.2:latest", "ollama/llama3.2:latest", "ollama/llama3.1:latest", "ollama/deepseek-r1:8b", "ollama/phi4:14b", "ollama/mistral:7b"]
     for model_name in model_names:
         print(f"\nProcessing with LLM model: {model_name}")
         results = []
@@ -292,6 +286,7 @@ def main():
 
                 # response = get_response(message, model_name = "llama3.1:latest")
                 response = get_response(message, model_name)
+                time.sleep(6)
                 
                 if response is None:
                     response = "Error: No response from model"
