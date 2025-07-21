@@ -178,7 +178,7 @@ def main():
             print(f"   Text: {result['text']}...")
             print(f"   Original Index: {result['original_index']}")
 
-            weather_info = generate_synthetic_weather("Lošinj")
+            weather_info = get_weather_conditions("Lošinj")
             print("\n Trenutno vrijeme na Lošinju je:")
             print(weather_info)
 
@@ -208,7 +208,8 @@ def main():
         #     }
         # ]
 
-        response = get_response(message, model_name = "llama3.1:latest")
+        #greska na message jer nije definirana (zakomentirana za kasnije)
+        response = get_response(message, model_name)
         print("\n Response:")
         print(response)
 
