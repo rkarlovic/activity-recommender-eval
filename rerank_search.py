@@ -175,7 +175,7 @@ def save_results_to_csv(results, model_name, output_dir="csv_outputs"):
     
     # Create filename with model name and timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{model_name.replace(':', '_')}_{timestamp}.csv"
+    filename = f"{model_name.replace(':', '_').replace('/', '_')}_{timestamp}.csv"
     filepath = os.path.join(output_dir, filename)
     
     # Convert results to DataFrame
