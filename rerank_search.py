@@ -37,7 +37,23 @@ def get_embedding(text: str):
         logger.error(f"Error getting embedding: {e}")
         return None
 
-def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
+def load_faiss_index_and_chunks():
+    """
+    Load FAISS index and chunks from files.
+    Returns:
+        index: FAISS index object
+        chunks: List of text chunks
+    """
+    try:
+        index = faiss.read_index(INDEX_FILE)
+        chunks = np.load(CHUNKS_FILE, allow_pickle=True)
+        # print(f"Loaded FAISS index with {len(chunks)} chunks.")
+        return index, chunks
+    except Exception as e:
+        logger.error(f"Error loading FAISS index or chunks: {e}")
+        return None, None
+
+def search_with_reranking(query: str, index, chunks, initial_k: int = 20, final_k: int = 5):
     """
     Two-stage search:
     1. FAISS retrieval to get initial candidates
@@ -45,13 +61,13 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
     """
     
     # Load FAISS index and chunks
-    try:
-        index = faiss.read_index(INDEX_FILE)
-        chunks = np.load(CHUNKS_FILE, allow_pickle=True)
-        print(f"Loaded FAISS index with {len(chunks)} chunks.")
-    except Exception as e:
-        print(f"Error loading FAISS index: {e}")
-        return []
+    # try:
+    #     index = faiss.read_index(INDEX_FILE)
+    #     chunks = np.load(CHUNKS_FILE, allow_pickle=True)
+    #     print(f"Loaded FAISS index with {len(chunks)} chunks.")
+    # except Exception as e:
+    #     print(f"Error loading FAISS index: {e}")
+    #     return []
     
     # Get query embedding
     query_embedding = get_embedding(query)
@@ -79,7 +95,7 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
         print("FAISS search returned no results.")
         return []
     
-    print(f"FAISS found {len(retrieved_chunks)} initial results.")
+    # print(f"FAISS found {len(retrieved_chunks)} initial results.")
     
     # Cohere reranking
     try:
@@ -104,7 +120,7 @@ def search_with_reranking(query: str, initial_k: int = 20, final_k: int = 5):
                 'original_index': original_chunk['index']
             })
         
-        print(f"Cohere reranking returned {len(reranked_results)} results.")
+        # print(f"Cohere reranking returned {len(reranked_results)} results.")
         return reranked_results
         
     except Exception as e:
@@ -217,12 +233,20 @@ def main():
         "Weather: foggy, temperature 17°C, Wind 5 km/h"
     ]
     model_names = ["ollama/gemma3:latest", "ollama/qwen3:latest", "ollama/qwen2:latest", "ollama/granite3.3:latest", "ollama/granite3.2:latest", "ollama/llama3.2:latest", "ollama/llama3.1:latest", "ollama/deepseek-r1:8b", "ollama/phi4:14b", "ollama/mistral:7b"]
+    total_prompts_per_model = len(user_profiles) * len(conditions)
     for model_name in model_names:
         print(f"\nProcessing with LLM model: {model_name}")
         results = []
+        current_prompt_count = 0
+        start_time = datetime.now()
         for user_id, user_profile in user_profiles.items():
             for weather in conditions:
                 print(f"Processing user profile: {user_id}, with weather condition: {weather}")
+                
+                current_prompt_count += 1
+                remaining = total_prompts_per_model - current_prompt_count
+                print(f"📊 {model_name}: {current_prompt_count}/{total_prompts_per_model} Started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}, (⏳ {remaining} left)")
+                
                 user_input = user_profile.get("input", "")
                 user_age = user_profile.get("age", "Unknown")
                 user_gender = user_profile.get("gender", "Unknown")
@@ -234,7 +258,12 @@ def main():
                 user_lifestyle = user_profile.get("lifestyle", [])
 
                 # Search with reranking
-                reranked_results = search_with_reranking(user_input, initial_k=30, final_k=10)
+                index, chunks = load_faiss_index_and_chunks()
+                if index is None or chunks is None:
+                    print("Failed to load FAISS index or chunks. Skipping this user.")
+                    continue
+                reranked_results = search_with_reranking(user_input, index, chunks, initial_k=30, final_k=10)
+                # reranked_results = search_with_reranking(user_input, initial_k=30, final_k=10)
                 if not reranked_results:
                     print("No results found after reranking.")
                     continue
@@ -310,8 +339,11 @@ def main():
                 }
                 
                 results.append(result)
-                
-                print(f"✓ Processed successfully")
+
+                end_time = datetime.now()
+                duration = (end_time - start_time).total_seconds() / 60
+
+                print(f"✓ Processed successfully!!! Duration: {duration:.2f} minutes")
             
         if results:
             csv_path = save_results_to_csv(results, model_name)
