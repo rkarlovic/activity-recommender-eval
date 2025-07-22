@@ -224,13 +224,13 @@ def main():
 
     conditions = [
         "Weather: sunny, temperature 25°C, Wind 10 km/h",
-        "Weather: partly cloudy, temperature 22°C, Wind 12 km/h",
+        # "Weather: partly cloudy, temperature 22°C, Wind 12 km/h",
         "Weather: mostly cloudy, temperature 20°C, Wind 14 km/h",
         "Weather: rainy, temperature 18°C, Wind 20 km/h",
-        "Weather: clear, temperature 24°C, Wind 8 km/h",
+        # "Weather: clear, temperature 24°C, Wind 8 km/h",
         "Weather: windy, temperature 21°C, Wind 25 km/h",
         "Weather: humid, temperature 27°C, Wind 15 km/h",
-        "Weather: foggy, temperature 17°C, Wind 5 km/h"
+        # "Weather: foggy, temperature 17°C, Wind 5 km/h"
     ]
     model_names = ["ollama/gemma3:latest", "ollama/qwen3:latest", "ollama/qwen2:latest", "ollama/granite3.3:latest", "ollama/granite3.2:latest", "ollama/llama3.2:latest", "ollama/llama3.1:latest", "ollama/deepseek-r1:8b", "ollama/phi4:14b", "ollama/mistral:7b"]
     total_prompts_per_model = len(user_profiles) * len(conditions)
