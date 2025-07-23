@@ -232,7 +232,7 @@ def main():
         "Weather: humid, temperature 27°C, Wind 15 km/h",
         # "Weather: foggy, temperature 17°C, Wind 5 km/h"
     ]
-    model_names = ["ollama/gemma3:latest", "ollama/qwen3:latest", "ollama/qwen2:latest", "ollama/granite3.3:latest", "ollama/granite3.2:latest", "ollama/llama3.2:latest", "ollama/llama3.1:latest", "ollama/deepseek-r1:8b", "ollama/phi4:14b", "ollama/mistral:7b"]
+    model_names = ["ollama/gemma3:latest", "ollama/qwen3:latest", "ollama/granite3.3:latest", "ollama/llama3.2:latest", "ollama/deepseek-r1:8b", "ollama/phi4:14b", "ollama/mistral:7b"]
     total_prompts_per_model = len(user_profiles) * len(conditions)
     for model_name in model_names:
         print(f"\nProcessing with LLM model: {model_name}")
